@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name = "viewport" content = "width = device - width, initial - scale = 1">
+		<link rel = "stylesheet" href = "style.css">
+		<script src = "timer.js"></script>
+		<script src = "slides.js"></script>
+		<script src = "sizes.js"></script>
+	</head>
+	<body onload = "showSlides(slideIndex);">
+		<header>
+			<h1 style = "font-size: 60px; text-align: center;">JcPenney Deals!</h1>
+		</header>
+		<div class = "column-container">
+			<div id = "leftcol" class = "column" style = "width: 50%;">
+				<div style = "padding-left: 10px; padding-right: 10px; padding-bottom: 10px;">
+					<div class = "timer" id = "timer"></div>
+				</div>
+				<div style = "padding: 10px;">
+					<div class = "slideshow-container">
+						<div class = "mySlides fade">
+							<img src = "main1.png" style = "width:100%;">
+							<div class = "text">Caption One</div>
+						</div>
+						<div class = "mySlides fade">
+							<img src = "main2.png" style = "width:100%">
+							<div class = "text">Caption Two</div>
+						</div>
+						<div class = "mySlides fade">
+							<img src = "main3.png" style = "width:100%">
+							<div class = "text">Caption Three</div>
+						</div>
+						<div class = "mySlides fade">
+							<img src = "main4.png" style = "width:100%">
+							<div class = "text">Caption Four</div>
+						</div>
+						
+						<a class = "prev" onclick = "plusSlides(-1)">&#10094;</a>
+						<a class = "next" onclick = "plusSlides(1)">&#10095;</a>
+					</div>
+				</div>
+				<div style = "text-align:center">
+					<span class = "dot" onclick = "currentSlide(1)"></span>
+					<span class = "dot" onclick = "currentSlide(2)"></span>
+					<span class = "dot" onclick = "currentSlide(3)"></span>
+					<span class = "dot" onclick = "currentSlide(4)"></span>
+				</div>
+			</div>
+			<div id = "rightcol" class = "column" style = "">
+				<div class = "stack">
+					<img src = "side1.png" style = "width:100%; border: 2px solid; border-radius: 5px;">
+				</div>
+				<div class = "stack">
+					<img src = "side2.png" style = "width:100%; border: 2px solid; border-radius: 5px;">
+				</div>
+			</div>
+		</div>
+		<div>
+			
+		</div>
+		<script>
+			document.getElementById("rightcol").style.height = document.getElementById("leftcol").style.height;
+		</script>
+	</body>
+</html>
